@@ -1,0 +1,15 @@
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\bin\Debug\net6.0\AppJuros.exe
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\bin\Debug\net6.0\AppJuros.deps.json
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\bin\Debug\net6.0\AppJuros.runtimeconfig.json
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\bin\Debug\net6.0\AppJuros.dll
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\bin\Debug\net6.0\AppJuros.pdb
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.csproj.AssemblyReference.cache
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.AssemblyInfoInputs.cache
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.AssemblyInfo.cs
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.csproj.CoreCompileInputs.cache
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.dll
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\refint\AppJuros.dll
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.pdb
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\AppJuros.genruntimeconfig.cache
+C:\Users\LUIZ\Documents\Davi\programação\projetos-c#\AppJuros\obj\Debug\net6.0\ref\AppJuros.dll
