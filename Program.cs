@@ -7,55 +7,51 @@ namespace AppJuros
         {
             Menu();
         }
-
-
         static void Menu()
         {
             Console.WriteLine("-------Calculadora de Juros-------");
             Console.WriteLine("Qual o tipo de Juros?");
             Console.WriteLine("1 -> Simples");
-            // Console.WriteLine("2 -> Compostos");
+            Console.WriteLine("2 -> Compostos");
             string typeOfInterest = Console.ReadLine()!;
 
             Console.WriteLine("Digite o valor do capital aplicado:");
-            Decimal amount = Decimal.Parse(Console.ReadLine()!);
+            double amount = double.Parse(Console.ReadLine()!);
 
             Console.WriteLine("Digite o valor da taxa de Juros(somente o número):");
-            Decimal interestRate = Decimal.Parse(Console.ReadLine()!);
+            double interestRate = double.Parse(Console.ReadLine()!);
 
             Console.WriteLine("A taxa é anual ou mensal?");
             Console.WriteLine("1 -> Anual");
             Console.WriteLine("2 -> Mensal");
             string typeOfDeadline = Console.ReadLine()!;
-            // transformar a taxa de quando for anual para mensal
-            Decimal interestPerMonth = typeOfDeadline == "1" ? (interestRate / 12) / 100 : interestRate / 100; // de porcentagem para decimal
+            double interestPerMonth = typeOfDeadline == "1" ? (interestRate / 12) / 100 : interestRate / 100;
 
             Console.WriteLine("Em quantos meses:");
-            // transformar de anos para meses
+            // transformar de anos para meses, depois
             int numberOfMonths = int.Parse(Console.ReadLine()!);
 
             GetInterest(typeOfInterest, amount, interestPerMonth, numberOfMonths);
         }
 
-        static void GetInterest(string typeOfInterest, Decimal amount, Decimal interestPerMonth, int numberOfMonths)
+        static void GetInterest(string typeOfInterest, double amount, double interestPerMonth, int numberOfMonths)
         {
-            switch (typeOfInterest)
+            if (typeOfInterest == "1")
             {
-                case "1":
-                    Decimal finalValue = amount * interestPerMonth * numberOfMonths;
+                double finalValue = amount * interestPerMonth * numberOfMonths;
 
-                    Console.WriteLine("---------------------");
-                    Console.WriteLine("O valor de juros: R$" + finalValue.ToString("C"));
-                    Console.WriteLine("O valor total do montante: R$" + (amount + finalValue).ToString("C"));
-                    break;
-                case "2":
-                    Console.WriteLine("Composto");
-                    break;
+                Console.WriteLine("---------------------");
+                Console.WriteLine("O valor de juros: R$" + finalValue.ToString("C"));
+                Console.WriteLine("O valor total do montante: R$" + (amount + finalValue).ToString("C"));
+            }
+            else if (typeOfInterest == "2")
+            {
 
-                default:
-                    Console.WriteLine("Selecione um valor válido!");
-                    Menu();
-                    break;
+                double finalValue = amount * Math.Pow(1 + interestPerMonth, numberOfMonths);
+
+                Console.WriteLine("---------------------");
+                Console.WriteLine("O valor de juros: R$" + (finalValue - amount).ToString("C"));
+                Console.WriteLine("O valor total do montante: R$" + (finalValue.ToString("C")));
             }
         }
     }
